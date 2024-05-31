@@ -1,0 +1,22 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: /cni-plugins
+  name: cni-plugins
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|cni-plugins'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/infinitydon/nephio-proxmox-packages.git
+    directory: cni-plugins-install
+    ref: main
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/infinitydon/nephio-proxmox-packages.git
+    directory: cni-plugins-install
+    ref: main
+    commit: d1c089520604e089197e6f7489ea5d29720de87d
+info:
+  description: multus description
