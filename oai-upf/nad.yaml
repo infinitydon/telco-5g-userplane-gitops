@@ -2,7 +2,7 @@ apiVersion: k8s.cni.cncf.io/v1
 kind: NetworkAttachmentDefinition
 metadata: # kpt-merge: upf-example/upf-edge-n3
   name: upf-edge-n3
-  namespace: oai-core
+  namespace: upf-example
   annotations:
     internal.kpt.dev/upstream-identifier: 'k8s.cni.cncf.io|NetworkAttachmentDefinition|upf-example|upf-edge-n3'
 spec:
@@ -12,7 +12,7 @@ apiVersion: k8s.cni.cncf.io/v1
 kind: NetworkAttachmentDefinition
 metadata: # kpt-merge: upf-example/upf-edge-n4
   name: upf-edge-n4
-  namespace: oai-core
+  namespace: upf-example
   annotations:
     internal.kpt.dev/upstream-identifier: 'k8s.cni.cncf.io|NetworkAttachmentDefinition|upf-example|upf-edge-n4'
 spec:
@@ -22,7 +22,7 @@ apiVersion: k8s.cni.cncf.io/v1
 kind: NetworkAttachmentDefinition
 metadata: # kpt-merge: upf-example/upf-edge-n6
   name: upf-edge-n6
-  namespace: oai-core
+  namespace: upf-example
   annotations:
     internal.kpt.dev/upstream-identifier: 'k8s.cni.cncf.io|NetworkAttachmentDefinition|upf-example|upf-edge-n6'
 spec:
